@@ -2,13 +2,19 @@ import Home from './pages/Home'
 import Error from './pages/Error'
 import Rooms from './pages/Rooms'
 import SingleRoom from './pages/SingleRoom'
+import Navbar from './components/Navbar'
+import { Route, Switch} from 'react-router-dom'
+import './App.css'
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Error />
-      <Rooms />
-      <SingleRoom />
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/Rooms' component={Rooms} />
+        <Route path='/Rooms/:abdu' component={SingleRoom} />
+        <Route component={Error} />
+      </Switch>
     </div>
   );
 }
