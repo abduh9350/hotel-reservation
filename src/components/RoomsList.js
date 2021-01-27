@@ -19,8 +19,7 @@ function RoomsList({rooms}) {
                         <Room key={item.id} room={item} />
                     )
                 })}
-            </div>
-           Hello Rooms List 
+            </div> 
         </section>
     )
 }
