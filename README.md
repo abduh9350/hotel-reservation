@@ -1,2 +1,2 @@
 # hotel-reservation
-[https://abdu-hotelreservation.netlify.app/](Live)
+[Live](https://abdu-hotelreservation.netlify.app/)
